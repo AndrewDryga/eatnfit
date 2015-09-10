@@ -885,19 +885,24 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   font-weight: 800;
   letter-spacing: 1px;
   color: #ffffff;
+  opacity: 0.8;
+  -webkit-transition: opacity 0.25s;
+  -moz-transition: opacity 0.25s;
+  -o-transition: opacity 0.25s;
+  transition: opacity 0.25s;
 }
 .header-1 .navbar .nav > li > a:hover,
 .header-1 .navbar .nav > li > a:focus,
 .header-1 .navbar .nav > li > a.active {
-  color: rgba(0, 0, 0, 0.4);
+  opacity: 1;
 }
 .header-1 .navbar .nav > li.active > a {
-  color: rgba(0, 0, 0, 0.4);
+  opacity: 1;
 }
 .header-1 .navbar .nav > li.active > a:hover,
 .header-1 .navbar .nav > li.active > a:focus,
 .header-1 .navbar .nav > li.active > a.active {
-  color: rgba(0, 0, 0, 0.4);
+  opacity: 1;
 }
 .header-1-sub {
   position: relative;
