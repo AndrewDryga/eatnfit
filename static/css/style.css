@@ -1194,7 +1194,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
  * */
 .content-19 {
   position: relative;
-  padding-top: 130px;
+  padding-top: 30px;
   padding-bottom: 130px;
 }
 .content-19 .col-sm-7 .quote {
@@ -1606,7 +1606,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
  * Price 4 stylesheet
  * */
 .price-4 {
-  padding-top: 110px;
+  padding-top: 30px;
   padding-bottom: 110px;
 }
 .price-4 .plan {
@@ -1752,6 +1752,11 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
 }
 .crew-4 .members .member-wrapper {
   display: table-cell;
+  vertical-align: top;
+}
+.crew-4 .members .member-wrapper p {
+    font-size: 14px;
+    line-height: 1.4;
 }
 .crew-4 .members .member-wrapper:first-child + .member-wrapper {
   text-align: center;
@@ -1760,11 +1765,12 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   text-align: right;
 }
 .crew-4 .members .member {
-  width: 265px;
+  width: 270px;
+  padding-right: 20px;
   display: inline-block;
 }
 .crew-4 .members .photo-wrapper {
-  width: 265px;
+  width: 230px;
   height: 180px;
   position: relative;
   -webkit-border-radius: 6px;
