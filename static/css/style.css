@@ -6,6 +6,11 @@
     padding-top: 30px !important;
 }
 
+.price-4 .description-detail img {
+    width: 101px;
+    height: 101px;
+}
+
 @import url(http://fonts.googleapis.com/css?family=Montserrat);
 .dropdown-arrow-inverse {
   border-bottom-color: #34495e !important;
@@ -1199,7 +1204,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
  * */
 .content-19 {
   position: relative;
-  padding-top: 30px;
+  padding-top: 73px;
   padding-bottom: 130px;
 }
 .content-19 .col-sm-7 .quote {
@@ -1229,7 +1234,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   }
 }
 .content-19 .col-sm-7 .quote .quote-text {
-  font-size: 37px;
+  font-size: 30px;
   font-weight: normal;
   color: #2c3e50;
   font-weight: 300;
@@ -1337,7 +1342,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
 }
 .content-31 .container {
   position: relative;
-  padding: 50px 0;
+  padding: 0;
 }
 .content-31 .container:before {
   content: '';
@@ -1611,7 +1616,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
  * Price 4 stylesheet
  * */
 .price-4 {
-  padding-top: 30px;
+  padding-top: 73px;
   padding-bottom: 110px;
 }
 .price-4 .plan {
@@ -1746,7 +1751,6 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   margin: 0 0 73px;
   font-size: 30px;
   text-align: center;
-  font-weight: 300;
 }
 .crew-4 .members {
   display: table;
