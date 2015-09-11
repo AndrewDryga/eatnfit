@@ -937,7 +937,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
 }
 @media (max-width: 480px) {
   .header-1-sub h3 {
-    font-size: 26px;
+    font-size: 23px;
     font-weight: normal;
     color: #ffffff;
     margin: 0 0 24px 0;
@@ -960,7 +960,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
 }
 @media (max-width: 480px) {
   .header-1-sub .lead {
-    font-size: 22px;
+    font-size: 16px;
     font-weight: normal;
     color: #ffffff;
   }
@@ -1045,7 +1045,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
 }
 @media (max-width: 480px) {
   .header-1-sub .page-transitions .caption {
-    bottom: 73px;
+    bottom: 100px;
   }
 }
 .header-1-sub .page-transitions .controls > * {
@@ -1540,7 +1540,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   }
   .content-31 .container h3 {
     color: #1abc9c;
-    font-size: 30px;
+    font-size: 23px;
   }
   .content-31 .container .img img:first-child {
     opacity: 0;
@@ -1975,6 +1975,10 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
     height: 101px;
 }
 
+.nobr {
+    white-space:nowrap;
+}
+
 @media (max-width: 767px) {
     .price-4 {
         padding-top: 35px;
@@ -2011,5 +2015,70 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
 
     .crew-4 .members .photo-wrapper {
         width: 300px;
+    }
+
+    .header-1 .navbar .nav > li > a {
+        opacity: 1;
+    }
+
+    body > .navbar-collapse .nav > li > a {
+        opacity: 1;
+        color: #ffffff;
+    }
+
+    .header-1-sub .caption {
+        text-align: center;
+    }
+
+    .price-4 .plan {
+        border-color: #1abc9c;
+    }
+
+    .price-4 .plan .title,
+    .price-4 .plan .price,
+    .price-4 .plan .btn {
+        background: #1abc9c;
+        border-color: #1abc9c;
+    }
+
+    .price-4 .plan .title,
+    .price-4 .plan .price {
+        color: #fff;
+    }
+
+    .price-4 .plan .price {
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    .crew-4 {
+        padding-bottom: 37px;
+    }
+}
+
+@media (max-width: 320px) {
+    .header-1 .navbar .brand img:first-child {
+        width: 200px;
+        height: 45px;
+        margin-top: -8px;
+    }
+
+    .content-31 .container h3 {
+        margin: 10px 0 30px;
+    }
+
+    .content-31 p {
+        font-size: 14px;
+    }
+
+    .content-31 .container > * {
+        padding: 20px 0;
+    }
+
+    .price-4 .plan .title {
+        font-size: 19px;
+    }
+
+    .price-4 .plan .description {
+        font-size: 16px;
     }
 }
