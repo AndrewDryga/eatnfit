@@ -937,7 +937,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
 }
 @media (max-width: 480px) {
   .header-1-sub h3 {
-    font-size: 23px;
+    font-size: 33px;
     font-weight: normal;
     color: #ffffff;
     margin: 0 0 24px 0;
@@ -960,7 +960,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
 }
 @media (max-width: 480px) {
   .header-1-sub .lead {
-    font-size: 16px;
+    font-size: 19px;
     font-weight: normal;
     color: #ffffff;
   }
@@ -1045,7 +1045,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
 }
 @media (max-width: 480px) {
   .header-1-sub .page-transitions .caption {
-    bottom: 100px;
+    bottom: 76px;
   }
 }
 .header-1-sub .page-transitions .controls > * {
