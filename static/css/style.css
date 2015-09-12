@@ -2045,11 +2045,11 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
 }
 .contacts-1 form .btn.btn-primary:hover,
 .contacts-1 form .btn.btn-primary:focus {
-  background-color: #e74c3c;
+  background-color: #16A085;
 }
 .contacts-1 form .btn.btn-primary:active,
 .contacts-1 form .btn.btn-primary.active {
-  background-color: #c44133;
+  background-color: #48c9b0;
 }
 .contacts-1 .additional {
   margin-bottom: 45px;
@@ -2108,6 +2108,35 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
 .nobr {
     white-space:nowrap;
 }
+
+.spinner {
+  display: inline-block;
+  opacity: 0;
+  max-width: 0;
+
+  -webkit-transition: opacity 0.25s, max-width 0.45s;
+  -moz-transition: opacity 0.25s, max-width 0.45s;
+  -o-transition: opacity 0.25s, max-width 0.45s;
+  transition: opacity 0.25s, max-width 0.45s;
+}
+
+.has-spinner.active {
+  cursor:progress;
+}
+
+.has-spinner.active .spinner {
+  opacity: 1;
+  max-width: 50px;
+}
+
+.order-form-message {
+    margin-top: 100px;
+}
+
+.order-form-message img {
+    margin-bottom: 50px;
+}
+
 
 @media (max-width: 767px) {
     .price-4 {
