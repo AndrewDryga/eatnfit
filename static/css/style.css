@@ -2212,6 +2212,10 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
     .crew-4 {
         padding-bottom: 37px;
     }
+
+    .order-form-message {
+        margin-top: 10px;
+    }
 }
 
 @media (max-width: 320px) {
