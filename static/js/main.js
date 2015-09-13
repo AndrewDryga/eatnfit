@@ -12,6 +12,7 @@ $(function() {
         $.scrollTo($('.order-form-placemark'), 300, {
             offset: 50,
             onAfter: function() {
+                window.location.hash = "#order_form"
                 ga('send', 'event', 'Order_Form', 'Visible', {useBeacon: true})
                 var $animated_blocks = $('.order-section').find('.fade-block');
 
