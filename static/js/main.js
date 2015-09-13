@@ -7,10 +7,23 @@ $(function() {
     // Order buttons
     $('.btn-order').click(function(event) {
         event.preventDefault();
-        $.scrollTo($('.order-form-placemark'), 500, {
+        $.scrollTo($('.order-form-placemark'), 300, {
             offset: 50,
             onAfter: function() {
+                var $animated_blocks = $('.order-section').find('.fade-block');
+
+                $animated_blocks.css({opacity: 0});
                 $('.order-section').slideDown(400);
+                var i = 0;
+                $animated_blocks.each(function() {
+                    var $this = $(this);
+                    setTimeout(function() {
+                        $this.animate({opacity: 1}, 350)
+                    }, 100*i)
+                    i++;
+                })
+
+                $('.order-section .form-control[name=NAME]').select();
             }
         });
 
