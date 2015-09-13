@@ -2,6 +2,8 @@ $(function() {
     // Hide order form for new customers and those who wasn't reffered to it
     if(window.location.hash.substring(1) != "order_form") {
         $('.order-section').hide();
+    } else {
+        ga('send', 'event', 'Order_Form', 'Visible', {useBeacon: true});
     }
 
     // Order buttons
@@ -10,6 +12,7 @@ $(function() {
         $.scrollTo($('.order-form-placemark'), 300, {
             offset: 50,
             onAfter: function() {
+                ga('send', 'event', 'Order_Form', 'Visible', {useBeacon: true})
                 var $animated_blocks = $('.order-section').find('.fade-block');
 
                 $animated_blocks.css({opacity: 0});
@@ -55,6 +58,7 @@ $(function() {
                 $submit_btn_text.text('Попробовать еще раз');
                 $form.slideUp();
                 $form_error_message.removeClass('hidden').hide().slideDown();
+                ga('send', 'event', 'Order', 'Error', {useBeacon: true})
             },
             success: function(data) {
                 console.log(data);
@@ -62,6 +66,7 @@ $(function() {
                     // Something went wrong, parse data.msg string and display message
                     $submit_btn.removeAttr('disabled');
                     $submit_btn_text.text('Попробовать еще раз');
+                    ga('send', 'event', 'Order', 'Invalid', {useBeacon: true})
                     // TODO: Show validation errors
                 } else {
                     // It worked, so hide form and display thank-you message.
@@ -71,6 +76,7 @@ $(function() {
                     $submit_btn_text.text('Заказ отправлен');
                     $form.slideUp();
                     $form_success_message.removeClass('hidden').hide().slideDown();
+                    ga('send', 'event', 'Order', 'Completed', {useBeacon: true})
                 }
                 $submit_btn.removeClass('active');
             },
