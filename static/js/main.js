@@ -1,13 +1,15 @@
 $(function() {
+    var form_animated = false;
+
     // Hide order form for new customers and those who wasn't reffered to it
     if(window.location.hash.substring(1) != "order_form") {
         $('.order-section').hide();
     } else {
+        form_animated = true;
         ga('send', 'event', 'Order_Form', 'Visible', {useBeacon: true});
     }
 
     // Order buttons
-    var form_animated = false;
     $('.btn-order').click(function(event) {
         event.preventDefault();
         $.scrollTo($('.order-form-placemark'), 300, {
