@@ -7,6 +7,7 @@ $(function() {
     }
 
     // Order buttons
+    var form_animated = false;
     $('.btn-order').click(function(event) {
         event.preventDefault();
         $.scrollTo($('.order-form-placemark'), 300, {
@@ -16,18 +17,21 @@ $(function() {
                 ga('send', 'event', 'Order_Form', 'Visible', {useBeacon: true});
                 var $animated_blocks = $('.order-section').find('.fade-block');
 
-                $animated_blocks.css({opacity: 0});
-                $('.order-section').slideDown(400);
-                var i = 0;
-                $animated_blocks.each(function() {
-                    var $this = $(this);
-                    setTimeout(function() {
-                        $this.animate({opacity: 1}, 350)
-                    }, 100*i)
-                    i++;
-                })
+                if(!form_animated) {
+                    form_animated = true;
+                    $animated_blocks.css({opacity: 0});
+                    $('.order-section').slideDown(400);
+                    var i = 0;
+                    $animated_blocks.each(function() {
+                        var $this = $(this);
+                        setTimeout(function() {
+                            $this.animate({opacity: 1}, 350)
+                        }, 100*i)
+                        i++;
+                    })
 
-                $('.order-section .form-control[name=NAME]').select();
+                    $('.order-section .form-control[name=NAME]').select();
+                }
             }
         });
 
